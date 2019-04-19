@@ -1,12 +1,6 @@
 <?xml version="1.1" encoding="UTF-8"?>
 <metadata name="OrderDetails" path="/users/composite/admin/Test/OrderDetails" type="TABLE" subtype="SQL_TABLE" changeToken="0" tableType="VIEW">
   <columns>
-    <column name="status" nullable="true">
-      <datatype type="STRING" maxLength="50"/>
-      <security>
-        <owner user="admin" domain="composite"/>
-      </security>
-    </column>
     <column name="discount" nullable="true">
       <datatype type="DECIMAL" maxDigits="12" minFractionalDigits="2" maxFractionalDigits="2"/>
       <security>
@@ -50,7 +44,7 @@
     --orderdetails.productid, 
     --orderdetails.quantity, 
     --orderdetails.unitprice, 
-    orderdetails.status, 
+    --orderdetails.status, 
     orderdetails.discount
 FROM      
     /users/composite/admin/Test/ds_orders/tutorial/orderdetails orderdetails</attribute>
@@ -61,7 +55,7 @@ FROM
   <attribute name="explicitly.designed" type="BOOLEAN">false</attribute>
   <attribute name="impactLevel" type="INTEGER">0</attribute>
   <attribute name="impactMessage" type="NULL"/>
-  <attribute name="lastModifiedDate" type="LONG">1555713281547</attribute>
+  <attribute name="lastModifiedDate" type="LONG">1555713584846</attribute>
   <attribute name="lastModifiedUserDomain" type="STRING">composite</attribute>
   <attribute name="lastModifiedUserId" type="INTEGER">-1973</attribute>
   <attribute name="lastModifiedUserName" type="STRING">testuser</attribute>
